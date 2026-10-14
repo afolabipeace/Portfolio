@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Software developer portfolio with projects, experience, and contact information." />
+  <title>Afolabi Peace | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand" aria-label="Home">
+        <span class="brand-mark">A</span>
+        <span>Afolabi Peace</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Developer & Digital Literacy Advocate</p>
+          <h1>Hi, I’m Peace</h1>
+          <!-- <h1>Hi, I’m Peace — I build clean, scalable web experiences.</h1> -->
+          <p class="hero-text">
+            I design and build responsive web applications that solve real problems,
+            improve user experience, and scale with business goals.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Summary stats">
+            <div>
+              <strong>5+</strong>
+              <span>Years of experience</span>
+            </div>
+            <div>
+              <strong>18</strong>
+              <span>Projects delivered</span>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Problem-solving mindset</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Developer profile card">
+          <div class="profile-card">
+            <div class="status-row">
+              <span class="status-dot"></span>
+              <span>Available for freelance work</span>
+            </div>
+
+            <div class="profile-header">
+              <div class="avatar">AP</div>
+              <div>
+                <h2>Afolabi Peace</h2>
+                <p>Frontend Developer & Digital Literacy Advocate</p>
+              </div>
+            </div>
+
+            <div class="stack-list">
+              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker">About</p>
+          <h2>Developer with a focus on thoughtful, user-first technology.</h2>
+        </div>
+
+        <div class="about-copy">
+          <p>
+            I’m a software developer passionate about building high-quality digital
+            experiences that are both elegant and practical. My work blends strong
+            engineering fundamentals with a product mindset to turn ideas into clean,
+            maintainable solutions.
+          </p>
+          <p>
+            I enjoy collaborating with teams, solving complex problems, and crafting
+            interfaces that feel intuitive, responsive, and efficient. I care deeply
+            about performance, clarity, and writing code that stands the test of time.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Skills</p>
+          <h2>Tools and technologies I work with.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Languages</h3>
+            <div class="tag-list">
+              <span>JavaScript</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Bootstrap</span>
+            </div>
+          </article>
+
+          <!-- <article class="skill-card">
+              <h3>Frameworks</h3>
+              <div class="tag-list">
+                <span>React</span>
+                <span>Next.js</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>Vue</span>
+                <span>Tailwind</span>
+              </div>
+            </article> -->
+
+          <article class="skill-card">
+            <h3>Tools & Workflow</h3>
+            <div class="tag-list">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Figma</span>
+              <span>VS Code</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <h3>Databases</h3>
+            <div class="tag-list">
+              <span>MongoDB</span>
+              <span>Firebase</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2>Featured work and digital products.</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+              alt="Analytics dashboard project preview" />
+            <div class="project-body">
+              <span class="project-tag">Analytics App</span>
+              <h3>InsightFlow</h3>
+              <p>
+                A business analytics dashboard that helps teams track KPIs, monitor
+                trends, and act on real-time data.
+              </p>
+              <div class="project-meta">
+                <span>React</span>
+                <span>Node</span>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+              alt="Team collaboration platform project preview" />
+            <div class="project-body">
+              <span class="project-tag">Collaboration</span>
+              <h3>TeamBoard</h3>
+              <p>
+                A workflow and team coordination platform designed to streamline task
+                management and communication across departments.
+              </p>
+              <div class="project-meta">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
+              alt="E-commerce dashboard preview" />
+            <div class="project-body">
+              <span class="project-tag">E-Commerce</span>
+              <h3>Northstar Store</h3>
+              <p>
+                A modern storefront for digital products, designed to improve product
+                discovery, conversion, and customer experience.
+              </p>
+              <div class="project-meta">
+                <span>React</span>
+                <span>Stripe</span>
+                <span>Firebase</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+              alt="Developer tools app preview" />
+            <div class="project-body">
+              <span class="project-tag">Developer Tools</span>
+              <h3>CodePilot Hub</h3>
+              <p>
+                A toolkit for developers to organize snippets, save notes, and manage
+                daily workflows from one streamlined interface.
+              </p>
+              <div class="project-meta">
+                <span>Vue</span>
+                <span>Express</span>
+                <span>Supabase</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+                <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Experience</p>
+          <h2>Career timeline and milestones.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h3>Digital Literacy Instructor</h3>
+              <p>Home Teacher for SUMMER CODING SCHOOL students</p>
+              <ul>
+                <li>Led digital literacy classes for SUMMER CODING SCHOOL students.</li>
+                <li>Provided one-on-one tutoring to students struggling with basic computer skills.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h3>Software Developer Insrutor</h3>
+              <p>SQI COLLEG OF ICT</p>
+              <ul>
+                <li>Assisted in teaching JavaScript to students.</li>
+                <li>Provided one-on-one explanations and support to students struggling with some coding concepts.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date">2022 - 2025</div>
+            <div class="timeline-content">
+              <h3>Digital Literacy Instructor</h3>
+              <p>SQI CQLLEGE OF ICT</p>
+              <ul>
+                <li>Taught digital literacy courses to SUMMER CODING SCHOOL STUDENT.</li>
+                <li>Assisted Main Digital Literacy Instructor with Class taking, during my IT studies.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h3>Web Developer</h3>
+              <p>Freelance</p>
+              <ul>
+                <!-- <li>Designed and developed custom websites for small businesses.</li> -->
+                <li>Helped clients improve performance, design, and digital presence, with some effective funcion that
+                  aid good user exprience.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="contact-copy">
+        <p class="section-kicker">Contact</p>
+        <h2>Let’s build something impactful.</h2>
+        <p>
+          I’m open to new opportunities, collaborations, and challenging technical
+          projects.
+        </p>
+        <div class="social-links">
+          <a href="peaceafolabi04@gmail.com">Email</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/dashboard" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://x.com" target="_blank" rel="noreferrer">X / Twitter</a>
+        </div>
+      </div>
+
+      <form class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-btn">Send Message</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Afolabi Peace. All rights reserved.</p>
+      <!-- <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav> -->
+    </div>
+  </footer>
+</body>
+
+</html>
